@@ -1,0 +1,40 @@
+###Note Handling
+* handle notes with the same name
+* rename notes
+* fix file atributes function
+* fix note deletion fuction from GUI
+
+###Notebook Handling
+* live update of notebook creation
+
+###Export Options
+* add more options for comvenient export
+
+###Action Bar
+* implement text suggestions / auto complete 
+
+###Main GUI
+* theme note deletion prompt
+* add secondary dark theme
+* fix text resizing to window size
+
+###Settings GUI
+* add more cloud services
+* add general settings
+
+###Cloud Support
+* sync notes with dropbox
+
+###PhantomJs
+* make exporitng more efficient (specially when dealing with images)
+
+###Feature List
+* add sound recording (possible new way of file management needed)
+* note sharring (email, bt)
+* import for other file types (pdf, doc, xml - etc)
+
+
+###Sugestive Feature List 
+* change markdow engine (possibly for github markdown support)
+
+
