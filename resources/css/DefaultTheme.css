@@ -1,0 +1,198 @@
+.background{
+        -fx-background-color: White;
+}
+
+.root{
+        -fx-background-color: White;
+}
+
+.label{
+        -fx-font-size: 11pt;
+        -fx-font-family: "Segoe UI Semibold";
+        -fx-text-fill: #343434;
+        -fx-opacity: 0.6;
+}
+.list-view{
+        -fx-background-color: White;
+}
+
+.text-area {
+        -fx-background-insets: 0;
+        -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area .content {
+        -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused .content {
+        -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+        -fx-highlight-fill: #7ecfff;
+}
+
+.text-area .content {
+        -fx-padding: 10px;
+        -fx-text-fill: gray;
+        -fx-highlight-fill: #7ecfff;
+}
+
+.text-field{
+        -fx-background-color: White;
+}
+
+/*Scrollbar*/
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+        -fx-background-color:derive(black,90%);
+        -fx-background-insets: 2, 0, 0;
+        -fx-background-radius: 2em;
+
+}
+
+.root .scroll-pane {
+        -fx-background-color: transparent;
+}
+
+.root .scroll-bar .increment-button {
+        visibility: hidden;
+}
+
+.root .scroll-bar .decrement-button {
+        visibility: hidden;
+}
+
+.root .scroll-bar:vertical,
+.root .scroll-bar:horizontal{
+        -fx-background-color: transparent;
+}
+
+.root .scroll-bar:vertical .track-background,
+.root .scroll-bar:horizontal .track-background{
+        visibility: hidden;
+}
+
+.root .scroll-bar:vertical .track {
+        visibility: hidden;
+}
+
+.root .hide-thumb .scroll-bar:vertical .thumb {
+        -fx-background-color: transparent;
+}
+
+/*Dialogs*/
+
+.root.dialog-pane {
+        -fx-background-color: black;
+}
+
+.root.dialog-pane .label {
+        -fx-text-fill: white;
+}
+
+.root.dialog-pane:header .header-panel {
+        -fx-background-color: black;
+}
+
+.root.dialog-pane:header .header-panel .label {
+        -fx-font-style: italic;
+        -fx-font-size: 2em;
+}
+
+/* List View*/
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+        -fx-background-color:  #909090;
+        -fx-text-fill: white;
+}
+
+.list-cell:even { /* <=== changed to even */
+        -fx-background-color: white;
+}
+
+.list-cell:odd{
+        -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+        -fx-background-color: #a6a6a6;
+        -fx-text-fill: white;
+}
+
+.note-browser:filled:selected:focused, .list-cell:filled:selected {
+        -fx-background-color:  #909090;
+        -fx-text-fill: white;
+}
+
+.note-browser:even { /* <=== changed to even */
+        -fx-background-color: white;
+}
+
+.note-browser:odd{
+        -fx-background-color: white;
+}
+
+.note-browser:filled:hover {
+        -fx-background-color: #a6a6a6;
+        -fx-text-fill: white;
+}
+
+/* Context Menu */
+
+.context-menu {
+        -fx-background-color: white;
+        -fx-text-fill: white;
+}
+
+.menu-item:focused {
+        -fx-background-color: #a6a6a6;
+        -fx-text-fill: white;
+}
+
+.menu-item:focused .label {
+        -fx-text-fill: white;
+}
+
+/*tooltip*/
+
+.tooltip{
+        -fx-background-radius: 0 0 0 0;
+        -fx-background-color: #a6a6a6;
+}
+
+/* image files*/
+.delete-icon{
+        -fx-image: url('../img/delete_48dp.png');
+}
+
+.html-view-icon{
+        -fx-image: url('../img/htmlView_48dp.png');
+}
+
+.export-note-icon{
+        -fx-image: url('../img/exportNote_48dp.png');
+}
+
+.distraction-free-icon{
+        -fx-image: url('../img/distractionFree_48dp.png');
+}
+
+.add-content-icon{
+        -fx-image: url('../img/addContent_48dp.png');
+}
+
+.web-pin-icon{
+        -fx-image: url('../img/webPin_48dp.png');
+}
+
+.settings-icon{
+        -fx-image: url('../img/settings_48dp.png');
+}
+
+.dropBox-icon{
+        -fx-image: url('../img/dropBox.jpg');
+}
