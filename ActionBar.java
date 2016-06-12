@@ -194,7 +194,11 @@ public class ActionBar extends Pappel{
         }
 
         private void runAddFile(String command, String commandType){
+
                 String imageToAdd = null;
+                // used for adding local files
+                String localFileIdentifier = "file:///";
+                String fileName = null;
 
                 if (command.equals(commandType)){
 
@@ -210,28 +214,19 @@ public class ActionBar extends Pappel{
                         choseOutputFile.getExtensionFilters().add(extFilter);
                         tempFile = choseOutputFile.showOpenDialog(fileMan);
 
-                        /*
-                           String out = tempFile.toString().substring(Math.max(0, tempFile.
-                           toString().length() - 5));
-
-                        // dealing with adding file extensions if not already present
-                        if (!(out.equals(".html"))){
-                        out = tempFile.toString() + ".html";
-                        outputFile = new File (out);
-                        }
-                        else{ 
-                        outputFile = new File (tempFile.toString());
-                        }
-                        */
-
+                        
                         imageToAdd = tempFile.toString();  
+
+                        fileName = tempFile.getName();
+
                 }
 
                 else{
                         imageToAdd = command;
                 }
 
-                String markDFormat = "![Alt text]" + "(" + imageToAdd + ")";
+
+                String markDFormat = "![" + fileName + "]" + "(" + localFileIdentifier + imageToAdd + ")";
                 note.appendAndSave(markDFormat);
 
         }
