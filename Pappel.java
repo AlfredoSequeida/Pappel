@@ -70,6 +70,9 @@ public class Pappel extends Application{
         static Note note = new Note();
         static Notebook notebook = new Notebook();
 
+        // minialactionbar data
+        String minimalActionBarData= null;
+
         // listview
         static ListView notesContainer = new ListView();
 
@@ -77,6 +80,9 @@ public class Pappel extends Application{
 
         // counter for markdown preview
         int counter = 0;
+
+        // counter for audio recording
+        int audioRecordCounter = 0;
 
         // Pappel default dir
         final private String PAPPELDIR = System.getProperty("user.home") +      
@@ -148,6 +154,16 @@ public class Pappel extends Application{
                 htmlViewImgBtn.setFitHeight(25);
                 htmlViewImgBtn.setFitWidth(25);
 
+                ImageView audioRecordImgBtn = new ImageView();
+                audioRecordImgBtn.getStyleClass().add("audio-record-icon");
+                audioRecordImgBtn.setFitHeight(25);
+                audioRecordImgBtn.setFitWidth(25);
+
+                ImageView stopImgBtn = new ImageView();
+                stopImgBtn.getStyleClass().add("stop-icon");
+                stopImgBtn.setFitHeight(25);
+                stopImgBtn.setFitWidth(25);
+
                 ImageView exportNoteImgBtn = new ImageView();
                 exportNoteImgBtn.getStyleClass().add("export-note-icon");
                 exportNoteImgBtn.setFitHeight(25);
@@ -173,6 +189,15 @@ public class Pappel extends Application{
                 //htmlView
                 Tooltip htmlViewTooltip = new Tooltip("Markdown preview");
                 Tooltip.install(htmlViewImgBtn, htmlViewTooltip);
+
+                // stop 
+                Tooltip stopTooltip = new Tooltip("Stop recording");
+                Tooltip.install(stopImgBtn, stopTooltip);
+
+
+                // record audio 
+                Tooltip audioRecordTooltip = new Tooltip("Record audio");
+                Tooltip.install(audioRecordImgBtn, audioRecordTooltip);
 
                 // exportNote
                 Tooltip exportNoteTooltip = new Tooltip("Export options");
@@ -227,7 +252,7 @@ public class Pappel extends Application{
                 // containers
                 htmlViewContaier.getChildren().addAll(htmlViewImgBtn);
                 titleContainer.getChildren().addAll(noteTitle, dayLabel);
-                titleContainerBtns.getChildren().addAll(exportNoteImgBtn, deleteNoteImgBtn, distractionFreeImgBtn);
+                titleContainerBtns.getChildren().addAll(audioRecordImgBtn, exportNoteImgBtn, deleteNoteImgBtn, distractionFreeImgBtn);
 
 
                 // adding contentContainer to the grid
@@ -513,7 +538,7 @@ public class Pappel extends Application{
                         public void handle(MouseEvent event){                  
 
                                 notesContainer.getItems().remove(0, notesContainer.getItems().size());
- 
+
                                 try{
 
                                         String currentNotebook = notebookBrowser.getSelectionModel().
@@ -622,6 +647,52 @@ public class Pappel extends Application{
                                                 }
                                         }
                                 });
+
+
+                SoundRecorder soundRecorder = new SoundRecorder(minimalActionBarData);
+
+                //record audio
+                audioRecordImgBtn.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                                new EventHandler<MouseEvent>() {
+
+                                        @Override
+                                        public void handle(MouseEvent event){
+
+                                                Stage minialActionBarStage = new Stage();                                                
+                                                MinimalActionBar minialActionBar = new MinimalActionBar("Recording name");
+                                                minialActionBar.start(minialActionBarStage);
+
+                                                if (audioRecordCounter == 0){
+                                                        titleContainerBtns.getChildren().addAll(stopImgBtn);
+                                                        titleContainerBtns.getChildren().remove(audioRecordImgBtn);
+                                                        // indicates audio recording
+                                                        audioRecordCounter = 1;
+                                                        // add recording functionality
+                                                }
+
+                                        }
+                                });
+
+                // stop recording
+                stopImgBtn.addEventHandler(MouseEvent.MOUSE_CLICKED,
+                                new EventHandler<MouseEvent>() {
+
+                                        @Override
+                                        public void handle(MouseEvent event){
+
+                                                // if audio is recording
+                                                if (audioRecordCounter == 1){
+                                                        // stop audio recording
+                                                        //soundRecorder.finish();
+
+                                                        titleContainerBtns.getChildren().addAll(audioRecordImgBtn);
+                                                        titleContainerBtns.getChildren().remove(stopImgBtn);
+                                                        // indicates audio not recording
+                                                        audioRecordCounter = 0;
+                                                }
+                                        }
+                                });
+
 
                 // only export if note content excists
 

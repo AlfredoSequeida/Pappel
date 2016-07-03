@@ -196,3 +196,11 @@
 .dropBox-icon{
         -fx-image: url('../img/dropBox.jpg');
 }
+
+.audio-record-icon{
+        -fx-image: url('../img/audioRecord_48dp.png');
+}
+
+.stop-icon{
+        -fx-image: url('../img/stop_48dp.png');
+}
