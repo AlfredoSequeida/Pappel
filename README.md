@@ -1,23 +1,23 @@
 -Pappel
--=======
+=======
 
 -Pappel is a beautiful, powerful, simplistic, and user driven open source notetaking platform for the general and poweruser alike. Created by
 [AlfredoSequeida](http://alfredosequeida.wix.com/alfredosequeida).
 
 ## Table of contents
 
--* [Get Started](#get-started)
--* [Documentation](#documentation)
--* [Contributing](#contributing)
--* [Copyright and license](#copyright-and-license)
+- [Get Started](#get-started)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Copyright and license](#copyright-and-license)
 
 ## Getting Started
 
 ### Dependencies 
 Pappel requires the following depenencies to run as intended: 
 
--* Java Runtime Envirorment 1.8.0 or higher for execution
--* [PhantonJS](https://github.com/ariya/phantomjs) for pdf exporting options
+- Java Runtime Envirorment 1.8.0 or higher for execution
+- [PhantonJS](https://github.com/ariya/phantomjs) for pdf exporting options
 
 ### Installing Pappel
 -Installing Pappel is simple, simply grab the .jar file and run it!
@@ -26,9 +26,9 @@ Pappel requires the following depenencies to run as intended:
 ## Documentation
 
 ### Markdown
--Pappel utilizes the power of markdown in order to allow for fast and easy text formating. This is made possible using Markdown4J, which supports the standard markdown formating as well as extra addon based additions, which can be found [here](https://code.google.com/archive/p/markdown4j/).
+Pappel utilizes the power of markdown in order to allow for fast and easy text formating. This is made possible using Markdown4J, which supports the standard markdown formating as well as extra addon based additions, which can be found [here](https://code.google.com/archive/p/markdown4j/).
 
--If you are not familiar with markdown you can learn [here](http://daringfireball.net/projects/markdown/syntax)
+If you are not familiar with markdown you can learn [here](http://daringfireball.net/projects/markdown/syntax)
 .
 
 
@@ -57,9 +57,9 @@ The Settings Button
 --------------------
 In Pappel's settings you will find the following features
 
--* Apperance - Chose on of the available themes to make Pappel your own
--* Cloud Integration - Sleep calmer knowing your data is backed up with one of the cloud services options. To Use one, select on the image of the provider and follwo the given instructions.
--* General - Find the General settings for Pappel
+- Apperance - Chose on of the available themes to make Pappel your own
+- Cloud Integration - Sleep calmer knowing your data is backed up with one of the cloud services options. To Use one, select on the image of the provider and follwo the given instructions.
+- General - Find the General settings for Pappel
 
 The Add Buttons
 -----------------
@@ -77,12 +77,12 @@ restraining from their keyboards with the concept of commands. To display the ac
 usage : command [argumets]
 example: web-search: What is Pappel? 
 
--* web-search: - search the web using google's search engine for anything you want
+- web-search: - search the web using google's search engine for anything you want
 -
--* web-address: - go to a web page 
--* add-image: - add images to your document (image can include a url or localy hosted file)
--* add-note: - add a new note (argument should be the desired note name) 
--* add-notebook: - add  anew notebook (argument should be the desired notebook name) 
+- web-address: - go to a web page 
+- add-image: - add images to your document (image can include a url or localy hosted file)
+- add-note: - add a new note (argument should be the desired note name) 
+- add-notebook: - add  anew notebook (argument should be the desired notebook name) 
 
 The Web Action Window 
 -----------------------
