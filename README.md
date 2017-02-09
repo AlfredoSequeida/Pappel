@@ -1,4 +1,4 @@
--Pappel
+Pappel
 =======
 
 -Pappel is a beautiful, powerful, simplistic, and user driven open source notetaking platform for the general and poweruser alike. Created by
