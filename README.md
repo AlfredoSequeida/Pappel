@@ -78,7 +78,6 @@ usage : command [argumets]
 example: web-search: What is Pappel? 
 
 - web-search: - search the web using google's search engine for anything you want
--
 - web-address: - go to a web page 
 - add-image: - add images to your document (image can include a url or localy hosted file)
 - add-note: - add a new note (argument should be the desired note name) 
