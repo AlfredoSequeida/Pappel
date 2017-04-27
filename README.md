@@ -1,7 +1,9 @@
-![Pappel](https://github.com/AlfredoSequeida/Pappel/blob/master/resources/img/preview_images/pappel_logo.svg)
+![Pappel](https://github.com/AlfredoSequeida/Pappel/blob/master/resources/img/preview_images/pappel_logo.png)
 
 -Pappel is a beautiful, powerful, simplistic, and user driven open source note taking platform for the general and power user alike. Created by
 [AlfredoSequeida](http://alfredosequeida.wix.com/alfredosequeida).
+
+![Pappel](https://github.com/AlfredoSequeida/Pappel/blob/master/resources/img/preview_images/pappel_preview.png)
 
 ## Table of contents
 
@@ -81,6 +83,8 @@ example: web-search: What is Pappel?
 - add-image: - add images to your document (image can include a url or locally hosted file)
 - add-note: - add a new note (argument should be the desired note name) 
 - add-notebook: - add  anew notebook (argument should be the desired notebook name) 
+
+![Pappel](https://github.com/AlfredoSequeida/Pappel/blob/master/resources/img/preview_images/action_bar.png)
 
 ###The Web Action Window 
 
