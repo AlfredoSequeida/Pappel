@@ -89,3 +89,5 @@ example: web-search: What is Pappel?
 ###The Web Action Window 
 
 The web action window interfaces with Pappel to allow easy pinning of content to your note. This window will appear when using its corresponding commands such as 'web-search:' or 'web-address:' To pin content, simply click on the pin button that looks like a paper clip on the top right of the web action window and the content that is currently on your skin will attach to your note as a link.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
