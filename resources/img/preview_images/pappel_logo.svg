@@ -28,18 +28,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.69264137"
-     inkscape:cx="713.18866"
-     inkscape:cy="227.10048"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="694.31698"
+     inkscape:cy="13.866183"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="3190"
      inkscape:window-height="1742"
      inkscape:window-x="0"
      inkscape:window-y="48"
      inkscape:window-maximized="0"
-     units="px" />
+     units="px"
+     showguides="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -84,8 +85,33 @@
        width="264.23242"
        height="1.0537906"
        x="112.71577"
-       y="214.30847"
+       y="215.89597"
        inkscape:export-xdpi="98.349998"
        inkscape:export-ydpi="98.349998" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.99995232px;line-height:1.25;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.42499882"
+       x="149.83583"
+       y="265.23865"
+       id="text4545"><tspan
+         sodipodi:role="line"
+         id="tspan4543"
+         x="149.83583"
+         y="265.23865"
+         style="stroke-width:0.42499882">A note-taking <tspan
+   style="fill:#139ed8;fill-opacity:0.86666667;stroke-width:0.42499882"
+   id="tspan4576">app</tspan>lication </tspan></text>
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:0.86666667;stroke-width:0.42499882"
+       id="rect4622"
+       width="29.976828"
+       height="0.37564945"
+       x="270.54245"
+       y="266.38391" />
   </g>
 </svg>
