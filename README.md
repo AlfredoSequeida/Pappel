@@ -1,4 +1,4 @@
-![Pappel](https://github.com/AlfredoSequeida/Pappel/blob/master/resources/img/preview_images/pappel_logo.png)
+![Pappel](https://github.com/AlfredoSequeida/Pappel/blob/master/resources/img/preview_images/pappel_logo.svg)
 
 -Pappel is a beautiful, powerful, simplistic, and user driven open source note taking platform for the general and power user alike. Created by
 [AlfredoSequeida](http://alfredosequeida.wix.com/alfredosequeida).
