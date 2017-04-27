@@ -9,8 +9,6 @@
 
 - [Get Started](#get-started)
 - [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Copyright and license](#copyright-and-license)
 
 ## Getting Started
 
